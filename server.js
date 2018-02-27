@@ -14,7 +14,7 @@ const passport = require('passport');
 const cookieParser=require('cookie-parser');
 const app=express();
 const config=require('./config/secret.js');
-
+const port=process.env.PORT || 3000;
 
 mongoose.connect(config.database,function(err){
 	if(err){
@@ -47,9 +47,9 @@ app.use(fileUpload());
 
 mainRoutes=require('./routes/main');
 app.use(mainRoutes);
-app.listen(3000,(err)=>{
+app.listen(port,(err)=>{
 	if(err){
 		console.log(err);
 	}
-	console.log(`Running on server: ${3000}`);
+	console.log(`Running on server: ${port}`);
 });
