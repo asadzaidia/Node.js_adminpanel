@@ -1,0 +1,27 @@
+<h1 class="heading">Products!</h1>
+<hr class="hr-style">
+
+<div class="col-md-4 col-md-offset-2">           
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="color:#3774d6;">Product Name</th>
+        <th style="color:#3774d6;">Product Code</th>
+        <th style="color:#3774d6;">Product Image</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+    {{#each product}}
+
+
+      <tr>
+        <td >{{p_name}}</td>
+        <td>{{p_code}}</td>
+
+        <td><img class="img-responsive" src="./product_images/{{photo2}}" height="80" width="80"></td>
+      </tr>
+     {{/each}}
+    </tbody>
+  </table>
+</div>

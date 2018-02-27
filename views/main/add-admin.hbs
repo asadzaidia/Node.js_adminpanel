@@ -1,0 +1,36 @@
+
+<h1 class="heading">Add New Admin!</h1>
+<hr class="hr-style">
+
+<div class="col-md-4 col-md-offset-2">
+
+{{#if message}}
+<div class="alert alert-danger alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>{{message}}</strong>
+</div>
+
+{{/if}}
+{{#if success}}
+<div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>{{success}}</strong>
+</div>
+
+{{/if}}
+<form method="post" enctype="multipart/form-data">
+	<div class="form-group">
+		<label class="design">User Name</label>
+		<input type="text" class="form-control" name="username" required>
+	</div>
+	<div class="form-group">
+		<label class="design">Password</label>
+		<input type="password" class="form-control" name="password" required>
+	</div>
+	<div class="form-group">
+		<label class="design">User Image</label>
+		<input type="file" class="form-control" name="pic" required>
+	</div>
+	<button type="submit" class="btn btn-primary">Add Admin</button>
+</form>
+</div>

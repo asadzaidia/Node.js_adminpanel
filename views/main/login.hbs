@@ -1,0 +1,22 @@
+
+<h1 class="heading">Login!</h1>
+<hr class="hr-style">
+
+
+{{#if message}}
+<div class="alert alert-danger alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>{{message}}</strong>
+</div>
+{{/if}}
+<form method="post">
+	<div class="form-group">
+		<label class="design">User Name</label>
+		<input type="text" class="form-control" name="username" required>
+	</div>
+	<div class="form-group">
+		<label class="design">Password</label>
+		<input type="password" class="form-control" name="password" required>
+	</div>
+	<button type="submit" class="btn btn-primary">Login</button>
+</form>

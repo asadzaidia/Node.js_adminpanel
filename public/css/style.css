@@ -1,0 +1,88 @@
+.navbar-default {
+    background-color: #3774d6;
+    border-color: #3774d6;
+}
+.navbar-default .navbar-brand {
+    color: #dff0d8;
+    font-weight: bold;
+}
+span.logout{
+	 color: #dff0d8;
+    font-weight: bold;
+}
+li.logout{
+	 color: #dff0d8;
+    font-weight: bold;
+}
+span.logout:hover{
+	 color: #ffffff;
+    background-color: brown;
+}
+li.logout:hover{
+	 color: #ffffff;
+    background-color: brown;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #ffffff;
+    background-color: brown;
+}
+
+.nav-pills>li>a {
+    border-radius: 4px;
+    background: navajowhite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 20px 20px;
+}
+.heading{
+	font-size: 30px;
+	font-weight: bold;
+	text-align:center;
+}
+hr.hr-style  {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #3774d6; /* old IE */
+    background-color: #3774d6; /* Modern Browsers */
+}
+form.centering{
+    display: inline-block;
+    text-align: center;
+}
+
+label.design{
+	color:#3774d6;
+	font-weight: bold;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="file"]:focus,
+.uneditable-input:focus {   
+  border-color: #f4ce42;
+  box-shadow: 0 1px 1px #ef995b inset, 0 0 8px #ef995b;
+  outline: 0 none;
+}
+.badge{
+	color:white;
+	background-color: green;
+}
